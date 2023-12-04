@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <title>Aotomon | Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div>
+            <label>From Date : </label>
+            <input type="date" id="fromDate" placeholder="Select a date">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <label>To Date : </label>
+            <input type="date" id="toDate" placeholder="Select a date">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <button id="search" class="button button-blue">Search</button>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <button id="download" class="button button-green">Download</button>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div>
+            <button id="fullDownload" class="button button-purple">Full Download</button>
+        </div>
+    </div>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <div id="tableContainer"></div>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
